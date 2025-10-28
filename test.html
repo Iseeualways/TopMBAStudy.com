@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top MBA Study</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fdfdfd;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #003366, #0077b6);
+        padding: 14px 0;
+        position: relative;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 18px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background: white;
+        color: #000;
+        min-width: 220px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px 16px;
+        color: #003366;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+        background: #e6f2ff;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+<nav aria-label="Primary">
+    <a href="#">Home</a>
+
+    <div class="dropdown">
+        <a href="#">About Us</a>
+        <div class="dropdown-content">
+            <a href="#">Who We Are</a>
+            <a href="#">Our Vision & Mission</a>
+            <a href="#">Why Choose Us</a>
+            <a href="#">Contact Details</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Top MBA Colleges</a>
+        <div class="dropdown-content">
+            <a href="#">Top MBA Colleges in India</a>
+            <a href="#">Top IIMs</a>
+            <a href="#">Private MBA Colleges</a>
+            <a href="#">Government MBA Colleges</a>
+            <a href="#">State-Wise MBA Colleges</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">MBA Specializations</a>
+        <div class="dropdown-content">
+            <a href="#">Marketing Management</a>
+            <a href="#">Finance Management</a>
+            <a href="#">Human Resource Management</a>
+            <a href="#">Operations Management</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">International Business</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Entrance Exams</a>
+        <div class="dropdown-content">
+            <a href="#">CAT</a>
+            <a href="#">XAT</a>
+            <a href="#">MAT</a>
+            <a href="#">NMAT</a>
+            <a href="#">SNAP</a>
+            <a href="#">CMAT</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Articles</a>
+        <div class="dropdown-content">
+            <a href="#">Career Tips</a>
+            <a href="#">Admission Process</a>
+            <a href="#">MBA News</a>
+            <a href="#">Interview Preparation</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">More</a>
+        <div class="dropdown-content">
+            <a href="#">Scholarships</a>
+            <a href="#">MBA Abroad</a>
+            <a href="#">Online MBA</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
