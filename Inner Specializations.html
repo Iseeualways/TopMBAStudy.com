@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Disclaimer</title>
+    <title>Inner Specializations</title>
     <link rel="preload" as="image" href="poster.jpg">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         }
 
         h5 {
-            font-size: 20px !important;
+            font-size: 21px !important;
             color: #000 !important;
             font-weight: 700 !important;
         }
@@ -710,12 +710,15 @@
     <!-- =========================================================Hero Section -->
     <section class="hero position-relative">
         <div class="container py-5 position-relative hero-content">
-            <div class="row align-items-center text-center">
+            <div class="row align-items-center text-start">
                 <!-- Right: Exam Info -->
                 <div class="col-md-12 text-white">
-                    <h1 class="fw-bold mb-3 mx-0">
-                        Learntech Edu Solutions Pvt. Ltd.
+                    <h1 class="fw-bold mb-4 mx-0">
+                        MBA in Marketing : Course Details, Duration, Eligibility, Fees, Admission Process, Syllabus, and
+                        Career Opportunities
                     </h1>
+                    <p class="lead mb-4 text-light">Duration : 2 Years</p>
+                    <a href="#" class="hero-btn btn-orange">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -730,11 +733,11 @@
 
     <style>
         .hero .lead {
-            font-size: 20px !important;
+            font-size: 22px !important;
         }
 
         .hero h1 {
-            font-size: 40px !important;
+            font-size: 28px !important;
         }
 
         .hero {
@@ -813,7 +816,8 @@
 
     </section>
     <nav class="breadcrumb-nav text-dark mt-2 mb-4">
-        <a href="#" class="breadcrumb-link">Home <i class="fa-solid fa-chevron-right"></i> Disclaimer</a>
+        <a href="#" class="breadcrumb-link">Home <i class="fa-solid fa-chevron-right"></i> specializations<i
+                class="fa-solid fa-chevron-right"></i> Marketing </a>
 
     </nav>
 
@@ -872,6 +876,34 @@
 
         }
 
+
+        .search-box {
+            background: rgba(96, 89, 89, 0);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 900px;
+            margin-inline: 60px;
+
+
+        }
+
+        .search-box input {
+            padding: 16px 16px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+            flex: 1;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+        }
+
+
+
         /* Responsive Search */
         @media(min-width: 600px) {
             .search-box {
@@ -896,37 +928,874 @@
         }
     </style>
 
-    <section>
+    <div class="label-container">
 
-        <div class="container mb-5 ">
-            <h4 class="text-center ">Disclaimer</h4>
-            <div class="text-start">
-
-                <p>Information provided by Learntech Edu Solutions Pvt. Ltd. on https://learntechww.com/ is for general
-                    purposes only. It's done to supply information to the stakeholder regarding the education sector and
-                    our services in this area. All information on the website has been compiled in good faith and backed
-                    by research to the utmost level. However, we do not make any representations or warranties of any
-                    kind, express or implied, regarding the validity, availability, accuracy or completeness of the
-                    information provided on this website.<br>
-
-<br>
-
-                    We cannot be held liable for any loss or damage of any kind incurred due to the usage or reliance on
-                    the information provided on this website. Your use of the website and your reliance on the
-                    information is at your own risk.<br>
+        <div class="label active">Overview</div>
+        <div class="label">Syllabus</div>
+        <div class="label">Admissions</div>
+        <div class="label">Top Colleges</div>
+        <div class="label">Career Opportunities</div>
+        <div class="label">FAQ</div>
 
 
+    </div>
 
-                    The website contains testimonials by users of our services and reflects their real-life experiences
-                    and opinions. Those are their personal views and do not represent all our users' sentiments or us in
-                    general. As a service provider, we assume that individual experiences will vary. The testimonials
-                    have not been posted in exchange for any compensation and have been duly reviewed by us.
+    <style>
+        .label-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 10px 60px;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 50px;
+        }
+
+        .label-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .label {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 39, 91, 0.181);
+            border-radius: 50px;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            cursor: pointer;
+            backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .label:hover {
+            background: linear-gradient(135deg, #103853, #e2622d);
+            color: #fff;
+        }
+
+        .label.active {
+            background: linear-gradient(135deg, #103853, #e2622d);
+            color: white;
+            font-weight: 600;
+        }
+
+        .arrow-btn {
+            background: white;
+            border-radius: 50%;
+            padding: 8px 10px;
+            border: 1px solid #d0d6e0;
+            color: #004aad;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .arrow-btn:hover {
+            background: #004aad;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .label-container {
+                margin-left: 0;
+                justify-content: flex-start;
+            }
+
+            .label {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
+        }
+    </style>
+
+
+    <!-- ====================================================body of the page -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h5>All About NEET-UG Exam:</h5>
+                <p>Vidya Bharath College of Pharmacy, Bangalore, is a private institution managed by the Shri Maruthi
+                    Group
+                    of Institutions. The college is dedicated to providing value-based academic programmes in a
+                    supportive
+                    environment to equip students with the necessary knowledge and skills that can help them grow in the
+                    pharmaceutical industry and other related healthcare fields. The college has a distinguished history
+                    of
+                    helping talented students sharpen their skills and implement the acquired knowledge across various
+                    career paths.<br>
+                    <br>
+
+                    The faculty at Vidya Bharath College of Pharmacy, Bangalore, is well-qualified, young, and dynamic.
+                    The
+                    teacher-to-student ratio at the college is 1:10. This is done to ensure that each teacher addresses
+                    the
+                    academic and other basic needs of 10 students. Additionally, the college invites renowned scholars,
+                    respected dignitaries, and teachers who are well-versed in the education sector, specifically the
+                    pharmaceutical industry, to offer guest lectures, workshops, and seminars.
                 </p>
+
+                <p>Vidya Bharath College of Pharmacy, Bangalore, is a private institution managed by the Shri Maruthi
+                    Group
+                    of Institutions. The college is dedicated to providing value-based academic programmes in a
+                    supportive
+                    environment to equip students with the necessary knowledge and skills that can help them grow in the
+                    pharmaceutical industry and other related healthcare fields. The college has a distinguished history
+                    of
+                    helping talented students sharpen their skills and implement the acquired knowledge across various
+                    career paths.<br>
+                    <br>
+
+                    The faculty at Vidya Bharath College of Pharmacy, Bangalore, is well-qualified, young, and dynamic.
+                    The
+                    teacher-to-student ratio at the college is 1:10. This is done to ensure that each teacher addresses
+                    the
+                    academic and other basic needs of 10 students. Additionally, the college invites renowned scholars,
+                    respected dignitaries, and teachers who are well-versed in the education sector, specifically the
+                    pharmaceutical industry, to offer guest lectures, workshops, and seminars.
+                </p>
+
+                <p>Vidya Bharath College of Pharmacy, Bangalore, is a private institution managed by the Shri Maruthi
+                    Group
+                    of Institutions. The college is dedicated to providing value-based academic programmes in a
+                    supportive
+                    environment to equip students with the necessary knowledge and skills that can help them grow in the
+                    pharmaceutical industry and other related healthcare fields. The college has a distinguished history
+                    of
+                    helping talented students sharpen their skills and implement the acquired knowledge across various
+                    career paths.<br>
+                    <br>
+
+                    The faculty at Vidya Bharath College of Pharmacy, Bangalore, is well-qualified, young, and dynamic.
+                    The
+                    teacher-to-student ratio at the college is 1:10. This is done to ensure that each teacher addresses
+                    the
+                    academic and other basic needs of 10 students. Additionally, the college invites renowned scholars,
+                    respected dignitaries, and teachers who are well-versed in the education sector, specifically the
+                    pharmaceutical industry, to offer guest lectures, workshops, and seminars.
+                </p>
+                <p>Vidya Bharath College of Pharmacy, Bangalore, is a private institution managed by the Shri Maruthi
+                    Group
+                    of Institutions. The college is dedicated to providing value-based academic programmes in a
+                    supportive
+                    environment to equip students with the necessary knowledge and skills that can help them grow in the
+                    pharmaceutical industry and other related healthcare fields. The college has a distinguished history
+                    of
+                    helping talented students sharpen their skills and implement the acquired knowledge across various
+                    career paths.<br>
+                    <br>
+
+                    The faculty at Vidya Bharath College of Pharmacy, Bangalore, is well-qualified, young, and dynamic.
+                    The
+                    teacher-to-student ratio at the college is 1:10. This is done to ensure that each teacher addresses
+                    the
+                    academic and other basic needs of 10 students. Additionally, the college invites renowned scholars,
+                    respected dignitaries, and teachers who are well-versed in the education sector, specifically the
+                    pharmaceutical industry, to offer guest lectures, workshops, and seminars.
+                </p>
+                <p>Vidya Bharath College of Pharmacy, Bangalore, is a private institution managed by the Shri Maruthi
+                    Group
+                    of Institutions. The college is dedicated to providing value-based academic programmes in a
+                    supportive
+                    environment to equip students with the necessary knowledge and skills that can help them grow in the
+                    pharmaceutical industry and other related healthcare fields. The college has a distinguished history
+                    of
+                    helping talented students sharpen their skills and implement the acquired knowledge across various
+                    career paths.<br>
+                    <br>
+
+                    
+                </p>
+                
             </div>
+
+            <div class="col-lg-3">
+                <div class="interest-card">
+                    <div class="icon-bubble">
+                        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js"
+                            type="module"></script>
+                        <dotlottie-wc src="https://lottie.host/0d62a023-cb1b-42ca-b48b-788ee5f7854e/wc7feaIUDI.lottie"
+                            style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+                    </div>
+                    <div class="interest-text">
+                        <h6>Are you interested in this course?</h6>
+
+                        <button class="btn btn-orange">Check eligibility</button>
+                    </div>
+                </div>
+                <div class="college-card mt-4">
+                    <div class="college-header">
+                        <h5>Top MBA Colleges</h5>
+                    </div>
+                    <div class="college-item mb-3">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1747821131641.webp"
+                            alt="College Logo">
+                        <div class="college-text">
+                            <h6>Dr. Chandramma Dayananda Sagar Institute of Medical Education and Research (CDSIMER)
+                            </h6>
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+
+                    <div class="college-item">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1747821131641.webp"
+                            alt="College Logo">
+                        <div class="college-text">
+                            <h6>Dr. Chandramma Dayananda Sagar Institute of Medical Education and Research (CDSIMER)
+                            </h6>
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exam-card mt-4">
+                    <div class="exam-header">
+                        <h5>Top MBA Entrance Exams</h5>
+                    </div>
+
+                    <div class="exam-item">
+                        <img src="https://api.learntechww.com/exam_logo/logo1722428079427.png" alt="NEET UG Logo"
+                            class="exam-img">
+                        <div class="exam-text">
+                            <h6>NEET-UG</h6>
+                        </div>
+                    </div>
+
+                    <div class="exam-item">
+                        <img src="https://api.learntechww.com/exam_logo/logo1722428079427.png" alt="COMEDK UGET Logo"
+                            class="exam-img">
+                        <div class="exam-text">
+                            <h6>COMEDK UGET</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .exam-card {
+            background: #fcf7f1;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(13, 110, 253, 0.08);
+        }
+
+        .exam-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(13, 110, 253, 0.15);
+        }
+
+        /* Header */
+        .exam-header h5 {
+            font-size: 19px !important;
+            font-weight: 700;
+            color: #0d47a1;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .exam-header h5::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #0d6efd, #2196f3);
+            border-radius: 2px;
+        }
+
+        /* Exam items */
+        .exam-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: linear-gradient(90deg, rgba(255, 149, 0, 0.173), rgba(255, 149, 0, 0.173));
+            border-left: 4px solid #ffb95d;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .exam-item:hover {
+            background: linear-gradient(90deg, rgba(13, 110, 253, 0.08), rgba(255, 149, 0, 0.173));
+            transform: translateX(3px);
+        }
+
+        /* Image */
+        .exam-item img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text */
+        .exam-text h6 {
+            margin: 0;
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+        }
+
+        .college-card {
+            background: #fff6e9;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(13, 110, 253, 0.08);
+            text-align: left;
+        }
+
+        /* Heading section */
+        .college-header h5 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0d47a1;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .college-header h5::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -6px;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #0d6efd, #2196f3);
+            border-radius: 2px;
+        }
+
+        /* College item section */
+        .college-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: linear-gradient(90deg, rgba(255, 149, 0, 0.173), rgba(255, 149, 0, 0.173));
+            border-left: 4px solid #ffb95d;
+            border-radius: 10px;
+            padding: 14px;
+            transition: all 0.3s ease;
+        }
+
+
+
+        /* Image styling */
+        .college-item img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text section */
+        .college-text h6 {
+            margin: 0;
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        .college-text p {
+            margin: 4px 0 0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .interest-card {
+            background: linear-gradient(135deg, #ffffff 0%, #fde2b6 100%);
+            border-radius: 16px;
+            padding: 28px 20px;
+            box-shadow: 0 8px 24px rgba(13, 110, 253, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+
+        .interest-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(13, 110, 253, 0.15);
+        }
+
+
+        .icon-bubble {
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: floaty 3s ease-in-out infinite;
+        }
+
+
+        .icon-bubble i {
+            font-size: 42px;
+            color: #0d6efd;
+        }
+
+
+        @keyframes floaty {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+        .interest-text h6 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #073763;
+            margin-bottom: 10px;
+        }
+    </style>
+    <div class="container text-center position-relative px-5 py-4">
+        <h4>Popular MBA Specializations</h4>
+
+        <!-- Navigation Icons -->
+        <button class="nav-btn prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Finance.svg" class="mb-2" alt="">
+                    <h5>Finance</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Marketing.svg" class="mb-2" alt="">
+                    <h5>Marketing</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Human Resource.svg" class="mb-2" alt="">
+                    <h5>Human Resource</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Operations.svg" class="mb-2" alt="">
+                    <h5>Operations</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Business Analytics.svg" class="mb-2" alt="">
+                    <h5>Business Analytics</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="special-card orange-card rounded-2 even-row">
+                    <img src="Business Management.svg" class="mb-2" alt="">
+                    <h5>Business Management</h5>
+                    <p class="fs-6 text-primary-emphasis">10 Colleges</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* === SPECIALIZATION CARDS === */
+        .special-card {
+            padding: 10px 25px;
+            text-align: center;
+            transition: all 0.5s ease;
+            box-shadow: 0 2px 5px rgb(159, 159, 159);
+            overflow: hidden;
+            height: 24.3vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .special-card img {
+            margin-bottom: 20px !important;
+            margin-top: 10px;
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        .special-card.orange-card {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .special-card h5 {
+            font-size: 16px !important;
+            font-weight: 500 !important;
+        }
+
+        .special-card p {
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+
+        .even-row {
+            border-left: 3px solid rgb(252, 201, 143) !important;
+        }
+
+        .special-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* === NAVIGATION BUTTONS === */
+        .nav-btn {
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            background: white;
+            border: none;
+            color: #f98500;
+            font-size: 24px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .nav-btn:hover {
+            background: linear-gradient(90deg, #003e89, #db7f00);
+            color: #fff;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .prev-btn {
+            left: -10px !important;
+        }
+
+        .next-btn {
+            right: -10px !important;
+        }
+    </style>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <!-- ====================================approach section -->
+
+    <section>
+        <div class="container text-center mt-5">
+            <h4>Top MBA Study Approach for MBA in Marketing Specialization</h4>
+            <p class="text-start">Learntech Edu Solutions Pvt. Ltd. follows a holistic approach toward admission to the stream of your
+                dreams. The experts will help you to navigate your way to your dream college and course that will align
+                with your academic and professional goals. It includes counselling for your preferred courses.
+                Furthermore, the recommendations will be made to align your long-term goals with your academic goals.
+                You will have a smoother path to college. This will make your educational experience easier. You will
+                gain insights into the industry along with the practical and theoretical knowledge required to enter the
+                program.</p>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="approach-box">
+                            <img src="approach-img.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
+    <!-- =====================================COUNSELAR SECTION -->
 
+    <section class="experts-section py-5 position-relative">
+        <div class="container position-relative">
+            <div class="experts-header text-center mb-5">
+                <h4 class="fw-bold mb-3">Our Educational Experts</h4>
+                <p class="text-muted mx-auto" style="max-width:850px;">
+                    Meet our experienced counsellors who guide students towards academic success
+                    with clarity, confidence, and dedication.
+                </p>
+            </div>
+
+            <div class="row justify-content-center gx-2 position-relative z-2">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="expert-card p-4 h-100">
+                        <div class="expert-header d-flex align-items-center gap-3 mb-3">
+                            <div class="expert-image">
+                                <img src="https://api.learntechww.com/counsellorteam_image/counsellorteam_image1728551422441.webp"
+                                    alt="Sabitha Celestial" />
+                            </div>
+                            <div>
+                                <h5 class="fw-semibold mb-1 text-dark">Sabitha</h5>
+                                <span class="text-muted small">Bangalore</span>
+                            </div>
+                        </div>
+                        <p class="small mb-2 text-start">Counsellor Since <strong><br>05-Jul-2021</strong></p>
+                        <span class="badge rounded-pill bg-light text-danger mb-3 d-inline-block">Sr. Academic
+                            Counsellor</span>
+                        <button class="btn profile-btn w-70">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="expert-card p-4 h-100">
+                        <div class="expert-header d-flex align-items-center gap-3 mb-3">
+                            <div class="expert-image">
+                                <img src="https://api.learntechww.com/counsellorteam_image/counsellorteam_image1728551422441.webp"
+                                    alt="Haseena Purathat" />
+                            </div>
+                            <div>
+                                <h5 class="fw-semibold mb-1 text-dark">Haseena</h5>
+                                <span class="text-muted small">Dubai, UAE</span>
+                            </div>
+                        </div>
+                        <p class="small mb-2 text-start">Counsellor Since <strong><br>12-Aug-2020</strong></p>
+                        <span class="badge rounded-pill bg-light text-danger mb-3 d-inline-block">Sr. Academic
+                            Counsellor</span>
+                        <button class="btn profile-btn w-70">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="expert-card p-4 h-100">
+                        <div class="expert-header d-flex align-items-center gap-3 mb-3">
+                            <div class="expert-image">
+                                <img src="https://api.learntechww.com/counsellorteam_image/counsellorteam_image1728551422441.webp"
+                                    alt="Megha" />
+                            </div>
+                            <div>
+                                <h5 class="fw-semibold mb-1 text-dark">Megha</h5>
+                                <span class="text-muted small">Bangalore</span>
+                            </div>
+                        </div>
+                        <p class="small mb-2 text-start">Counsellor Since <strong><br>05-Apr-2021</strong></p>
+                        <span class="badge rounded-pill bg-light text-danger mb-3 d-inline-block">Sr. Academic
+                            Counsellor</span>
+                        <button class="btn profile-btn w-70">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="expert-card p-4 h-100">
+                        <div class="expert-header d-flex align-items-center gap-3 mb-3">
+                            <div class="expert-image">
+                                <img src="https://api.learntechww.com/counsellorteam_image/counsellorteam_image1728551422441.webp"
+                                    alt="Pooja Gupta" />
+                            </div>
+                            <div>
+                                <h5 class="fw-semibold mb-1 text-dark">Pooja Gupta</h5>
+                                <span class="text-muted small">Bangalore</span>
+                            </div>
+                        </div>
+                        <p class="small mb-2 text-start">Counsellor Since <strong><br>04-Mar-2014</strong></p>
+                        <span class="badge rounded-pill bg-light text-danger mb-3 d-inline-block">Sr. Academic
+                            Counsellor</span>
+                        <button class="btn profile-btn w-70">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bubble Background -->
+        <!-- <svg class="bubble-bg" viewBox="0 0 800 400">
+            <circle cx="100" cy="350" r="40" fill="rgba(0,123,255,0.1)" />
+            <circle cx="200" cy="100" r="80" fill="rgba(0,123,255,0.05)" />
+            <circle cx="600" cy="320" r="100" fill="rgba(0,123,255,0.08)" />
+            <circle cx="700" cy="80" r="60" fill="rgba(0,123,255,0.06)" />
+        </svg> -->
+    </section>
+
+    <style>
+        .expert-card {
+            border: 2px solid !important;
+            border-image: linear-gradient(90deg, #003e89, #ffffff, #db7f00) !important;
+            border-image-slice: 1 !important;
+            border-radius: 30px !important;
+            transition: all 0.3 ease !important;
+        }
+
+        .expert-card p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .experts-section {
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .expert-image {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #002c5bd5;
+            box-shadow: 0 0 8px rgba(0, 119, 255, 0.2);
+        }
+
+        .expert-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-btn {
+            background: linear-gradient(135deg, #103853, #e2622d);
+            color: #fff !important;
+            border: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-btn:hover {
+            background: linear-gradient(135deg, #103853, #e2622d);
+            transform: translateY(-2px);
+        }
+    </style>
+
+
+     <!-- =========================================================LOGIN LAST -->
+    <section class="horizontal-form-section py-5 position-relative mt-5">
+        <!-- Background Shape -->
+        <!-- <div class="form-layer"></div> -->
+
+        <div class="container text-center position-relative" style="z-index: 1;">
+            <h1 class="hero-title text-dark mb-3 fs-4">Expert Admission Assistance</h1>
+            <h2 class="hero-subtitle mb-2">Your Journey to the Best MBA Colleges Starts Here</h2>
+            <p class="hero-description mx-auto mb-4 fs-6" style="max-width:1000px;">
+                Connect with our experts to find the right MBA program that matches your goals. Explore, compare, and
+                apply effortlessly to India’s leading business schools.
+            </p>
+            <form class="d-flex flex-wrap gap-3 justify-content-between">
+                <input type="text" class="form-control form-input" placeholder="Name">
+                <input type="email" class="form-control form-input" placeholder="Email">
+                <input type="tel" class="form-control form-input" placeholder="Phone">
+                <input type="text" class="form-control form-input" placeholder="Interested College?">
+            </form>
+            <button type="submit" class="btn btn-orange px-5 py-2 mt-5 ">Request for a Call Back</button>
+        </div>
+    </section>
+
+    <style>
+        .horizontal-form-section {
+            position: relative;
+            /* Needed for absolutely positioned background */
+            overflow: hidden;
+            /* ensures clipped shape doesn’t overflow */
+            background-color: #fbf0e7 !important;
+        }
+
+        /* Background clipped shape */
+        .form-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #99bdcb70;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+            z-index: 0;
+        }
+
+        /* Ensure container content is above the shape */
+        .horizontal-form-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Form inputs */
+        .form-input {
+            height: 6vh;
+            border-radius: 50px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+            flex: 1 1 20%;
+            min-width: 150px;
+        }
+
+        .form-btn {
+            height: 6vh;
+            border-radius: 50px;
+            padding: 0 25px;
+        }
+
+        .horizontal-form-section {
+            background-color: #8fb2cb;
+        }
+
+        .form-control.form-input {
+            height: 6vh;
+            border-radius: 50px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+            flex: 1 1 20%;
+            min-width: 150px;
+
+        }
+
+        .horizontal-form-section .form-btn {
+            height: 6vh;
+            border-radius: 50px;
+            padding: 0 25px;
+        }
+
+        .form-btn {
+            border: 2px solid;
+            border-radius: 0 !important;
+            width: 30%;
+        }
+
+        .form-btn:hover {
+            border: 2px solid;
+            border-radius: 0 !important;
+            background-color: #000;
+
+        }
+
+        .hero-subtitle {
+            color: #003546;
+        }
+    </style>
 
     <!-- -==================================================FOOTER SECTION -->
 
@@ -947,28 +1816,24 @@
                         Block,<br>Jayanagar,
                         Bangalore, Karnataka - 560041</p>
                 </div>
-                <!-- Info -->
+
+<!-- Info -->
                 <div class="col-lg-2 col-md-6 mb-4 pt-5">
                     <h6 class="footer-title">Info</h6>
                     <ul class="list-unstyled">
                         <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
-                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i>
-                                advertise-with-us</a></li>
+                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i> advertise-with-us</a></li>
                         <li><a href="article.html"><i class="fa-solid fa-angles-right"></i> article</a></li>
-                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a>
-                        </li>
+                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a></li>
                         <li><a href="college.html"><i class="fa-solid fa-angles-right"></i> college</a></li>
                         <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i> exam-profile</a></li>
                         <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
-                        <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner Specializations</a></li>
+                       <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner Specializations</a></li>
                         <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a></li>
                         <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>
-                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a>
-                        </li>
-                        <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a>
-                        </li>
-                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i>
-                                terms-&-condition</a></li>
+                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a></li>
+                         <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a></li>
+                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i> terms-&-condition</a></li>
                     </ul>
                 </div>
 
