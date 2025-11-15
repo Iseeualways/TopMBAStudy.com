@@ -755,8 +755,6 @@
                 transition: all 0.3s ease;
                 background: #fff;
                 border: 1px solid rgb(219, 219, 219);
-
-
             }
 
 
@@ -820,11 +818,9 @@
 
                 <!-- Hero Content -->
                 <div class="hero-content text-center">
-                    <h1 class="mb-2 mx-4">Contact Us</h1>
-                    <p class="text-white">For students seeking admissions guidance or institutions looking to boost
-                        their branding, our expert team is ready to provide personalized support. Fill out the form
-                        below, and we'll get in touch with you shortly to address your specific needs and offer tailored
-                        solutions.</p>
+                    <h1 class="mb-4 mx-4">Contact Us</h1>
+                    <p class="text-white">Get expert MBA guidance and personalized support for admissions or
+                        collaborations. <br>Fill out the form, and our team will reach out shortly.</p>
                 </div>
             </section>
 
@@ -878,6 +874,10 @@
                     font-weight: 700;
                     margin-left: 80px;
 
+                }
+
+                .hero-content p{
+                    font-size: 18px;
                 }
 
 
@@ -942,11 +942,12 @@
                         <!-- Left Info Box -->
                         <div class="col-lg-6">
                             <div class="advisor-info p-4 p-md-5 h-100 rounded-0">
-                                <h3 class="fw-bold mb-3 text-white">Connect with Our Expert Advisors</h3>
-                                <p class="text-dark-100 mb-4">
-                                    Fill and submit the form to initiate a conversation with our expert advisors,
-                                    who will promptly reach out to provide insightful guidance and tailored support
-                                    for your inquiries.
+                                <h3 class="fw-bold mb-3 text-white">Connect with Our Admission Experts</h3>
+                                <p class="text-white mb-4">
+                                    Fill out and submit the form to start a conversation with our MBA admission
+                                    advisors.
+                                    Our team will reach out promptly to provide personalized guidance, course
+                                    recommendations, and support tailored to your career aspirations.
                                 </p>
 
                                 <ul class="list-unstyled mb-0 text-white">
@@ -973,7 +974,7 @@
 
                         <!-- Right Form -->
                         <div class="col-lg-6">
-                            <div class="contact-form p-2 bg-light rounded-4">
+                            <div class="contact-form p-3 bg-light rounded-1">
                                 <h3 class="fw-bold mb-4 text-dark">Contact for Personalized Support!</h3>
                                 <form>
                                     <div class="mb-3">
@@ -991,7 +992,7 @@
                                         <input type="text" class="form-control" placeholder="Location*" required>
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Preferred Course*"
+                                        <input type="text" class="form-control" placeholder="Preferred MBA Specializations*"
                                             required>
                                     </div>
                                     <div class="mb-3">
@@ -1008,7 +1009,7 @@
                                                 class="text-primary fw-semibold">Terms & Conditions</a>
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
+                                    <button type="submit" class="btn btn-orange px-4 py-2">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -1019,17 +1020,34 @@
 
 
             <style>
-                
                 .contact-advisor {
                     background: #ffffff;
                 }
 
                 .advisor-info {
-                    background-color: rgb(198, 154, 122);
-                    /* Deep blue like the screenshot */
-                    color: #fff;
+                    position: relative;
+                    background: url('https://cdn.pixabay.com/photo/2020/10/14/20/31/hands-5655424_1280.png') center/cover no-repeat !important;
+                    color: #fff !important;
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
                 }
+
+                /* Black overlay */
+                .advisor-info::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(0, 0, 0, 0.65);
+                    /* Adjust darkness here (0.45 = moderate black) */
+                    z-index: 1;
+                }
+
+                /* Make sure text stays above overlay */
+                .advisor-info>* {
+                    position: relative;
+                    z-index: 2;
+                }
+
 
                 .advisor-info i {
                     width: 25px;
@@ -1037,7 +1055,7 @@
                 }
 
                 .contact-form {
-                    background: #fffaf6 !important;
+                    background: #00365c16 !important;
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
                 }
 
@@ -1052,17 +1070,9 @@
                     font-weight: 500;
                 }
 
-                .btn-primary {
-                    background-color: #1d3e91;
-                    border: none;
-                    border-radius: 8px;
-                    transition: all 0.3s ease;
-                }
-
-                .btn-primary:hover {
-                    background-color: #16316f;
-                    transform: translateY(-2px);
-                }
+               .btn-orange{
+                margin-left: 250px;
+               }
             </style>
 
             <!--===================================================== location -->
@@ -1070,7 +1080,7 @@
 
             <section class="branches-section d-flex align-items-center pb-5" style="min-height: 90vh;">
                 <div class="container">
-                        <h2 class="text-center fw-bold mb-0 fs-1">FIND US @</h2>
+                    <h2 class="text-center fw-bold mb-0 fs-1">FIND US @</h2>
                     <h2 class="text-center fw-bold mb-5">Our Branches</h2>
                     <div class="row g-4 align-items-stretch">
 
@@ -1196,7 +1206,8 @@
                                 <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i>
                                         exam-profile</a></li>
                                 <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
-                               <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner Specializations</a></li>
+                                <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner
+                                        Specializations</a></li>
                                 <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a>
                                 </li>
                                 <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>

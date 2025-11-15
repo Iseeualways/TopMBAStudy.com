@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Advertise with us</title>
+    <title>Nri-Quota</title>
     <link rel="preload" as="image" href="poster.jpg">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,11 +26,70 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
 
     <style>
+        p {
+            color: #000;
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 20px !important;
+            color: #000 !important;
+            font-weight: 700 !important;
+        }
+
+        h3 {
+            font-size: 16px !important;
+            color: #000 !important;
+            font-weight: 700 !important;
+        }
+
+        h4 {
+            color: #00244c;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .btn-orange {
+            position: relative;
+            display: inline-block;
+            background-color: var(--orange) !important;
+            color: #ffa94d;
+            border: 2px solid #ffa94d;
+            border-radius: 0;
+            font-weight: 600;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-orange::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0.6) 50%,
+                    rgba(255, 255, 255, 0.3) 100%);
+            transform: skewX(-25deg);
+            transition: all 0.5s ease;
+        }
+
+        .btn-orange:hover {
+            background-color: #ffa94d;
+            color: #ffffff;
+
+        }
+
+        .btn-orange:hover::before {
+            left: 125%;
+            transition: all 0.5s ease;
+        }
+
         /* Vibrant gradient background */
         .vibrant-gradient {
             background: linear-gradient(135deg,
@@ -62,17 +121,6 @@
 
         * {
             box-sizing: border-box;
-        }
-
-        p {
-            color: #000 !important;
-            font-size: 16px !important;
-        }
-
-        h5 {
-            font-size: 24px !important;
-            color: #000;
-            font-weight: 700;
         }
 
         html,
@@ -204,7 +252,7 @@
 
 
             <!-- ✨ New pulsing text -->
-            <span class="pulse-text">MBA Admissions 2026</span>
+            <span class="pulse-text"> MBA Admissions 2026</span>
         </div>
 
         <style>
@@ -430,46 +478,40 @@
                     <a href="specializations.html">MBA Specializations</a>
                     <div class="dropdown-content specializations">
                         <div class="spec-grid">
-                                <a href="#"><img src="specializations-imgs/Marketing.svg" width="20%" alt=""> Marketing
-                                    Management</a>
-                                <a href="#"><img src="specializations-imgs/Finance.svg" width="20%" alt=""> Finance
-                                    Management</a>
-                                <a href="#"><img src="specializations-imgs/Human Resource.svg" width="20%" alt=""> Human
-                                    Resource Management</a>
-                                <a href="#"><img src="specializations-imgs/International Business.svg" width="20%"
-                                        alt="">
-                                    International Business</a>
-                                <a href="#"><img src="specializations-imgs/International Business.svg" width="20%"
-                                        alt="">
-                                    Operations Management</a>
-                                <a href="#"><img src="specializations-imgs/Information Technology.svg" width="20%"
-                                        alt="">
-                                    Information Technology</a>
-                                <a href="#"><img src="specializations-imgs/Business Analytics.svg" width="20%" alt="">
-                                    Business Analytics</a>
-                                <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
-                                    Entrepreneurship</a>
-                                <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
-                                    Healthcare Management</a>
-                                <a href="#"><img src="specializations-imgs/Logistics & Supply Chain.svg" width="20%"
-                                        alt="">
-                                    Logistics & Supply Chain</a>
-                                <a href="#"><img src="specializations-imgs/Retail Management.svg" width="20%" alt="">
-                                    Retail
-                                    Management</a>
-                                <a href="#"><img src="specializations-imgs/Tourism & Hospitality.svg" width="20%"
-                                        alt="">
-                                    Tourism & Hospitality</a>
-                                <a href="#"><img src="specializations-imgs/Project Management.svg" width="20%" alt="">
-                                    Project Management</a>
-                                <a href="#"><img src="specializations-imgs/Agri-Business.svg" width="20%" alt="">
-                                    Agri-Business</a>
-                                <a href="#"><img src="specializations-imgs/Media & Communication.svg" width="20%"
-                                        alt="">
-                                    Media & Communication</a>
-                                <a href="#" class="view-more mx-3 fs-6">View More <i
-                                        class="fa-solid fa-location-arrow"></i></a>
-                            </div>
+                            <a href="#"><img src="specializations-imgs/Marketing.svg" width="20%" alt=""> Marketing
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Finance.svg" width="20%" alt=""> Finance
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Human Resource.svg" width="20%" alt=""> Human
+                                Resource Management</a>
+                            <a href="#"><img src="specializations-imgs/International Business.svg" width="20%" alt="">
+                                International Business</a>
+                            <a href="#"><img src="specializations-imgs/International Business.svg" width="20%" alt="">
+                                Operations Management</a>
+                            <a href="#"><img src="specializations-imgs/Information Technology.svg" width="20%" alt="">
+                                Information Technology</a>
+                            <a href="#"><img src="specializations-imgs/Business Analytics.svg" width="20%" alt="">
+                                Business Analytics</a>
+                            <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
+                                Entrepreneurship</a>
+                            <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
+                                Healthcare Management</a>
+                            <a href="#"><img src="specializations-imgs/Logistics & Supply Chain.svg" width="20%" alt="">
+                                Logistics & Supply Chain</a>
+                            <a href="#"><img src="specializations-imgs/Retail Management.svg" width="20%" alt="">
+                                Retail
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Tourism & Hospitality.svg" width="20%" alt="">
+                                Tourism & Hospitality</a>
+                            <a href="#"><img src="specializations-imgs/Project Management.svg" width="20%" alt="">
+                                Project Management</a>
+                            <a href="#"><img src="specializations-imgs/Agri-Business.svg" width="20%" alt="">
+                                Agri-Business</a>
+                            <a href="#"><img src="specializations-imgs/Media & Communication.svg" width="20%" alt="">
+                                Media & Communication</a>
+                            <a href="#" class="view-more mx-3 fs-6">View More <i
+                                    class="fa-solid fa-location-arrow"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -654,33 +696,122 @@
                     }
                 }
             </style>
-
-
-
         </div>
     </header>
 
 
 
     <!-- =========================================================Hero Section -->
+    <section class="hero position-relative">
+        <div class="container py-5 position-relative hero-content">
+            <div class="row align-items-center text-center">
+                <!-- Right: Exam Info -->
+                <div class="col-md-12 text-white">
+                    <h1 class="fw-bold mb-3 mx-0">
+                        Know All About NRI Quota Seats in India
+                    </h1>
+                    <button class="btn btn-orange">Apply Now</button>
+                </div>
+            </div>
+        </div>
 
-    <img src="http://learntechww.com/images/icons/handshake.webp" alt="News Banner" class="news-hero-img">
+        <!-- SVG Wave Background -->
+        <svg class="svg-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,176C672,171,768,213,864,234.7C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L0,0Z">
+            </path>
+        </svg>
+    </section>
 
     <style>
-        .news-hero-img {
-            width: 100%;
-            height: 60vh;
-            object-fit: cover;
-            border-radius: 0;
-            display: block;
+        .hero .lead {
+            font-size: 20px !important;
+        }
 
+        .hero h1 {
+            font-size: 40px !important;
+        }
+
+        .hero {
+            background: #004aad;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 5;
+            /* Ensures content stays above SVG and background */
+        }
+
+        .hero-logo {
+            max-width: 110px;
+            border-radius: 10px;
+        }
+
+        .hero-box {
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-card {
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            background: #e9f2ff;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 74, 173, 0.1);
+        }
+
+        .svg-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+            z-index: 1;
+            /* keeps it behind the content */
+        }
+
+        /* Modern button style */
+        .hero-btn {
+            display: inline-block;
+            background: #fff;
+            color: #004aad;
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background: #002e6e;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 90px;
+            }
+
+            .hero-box .row>div {
+                flex: 0 0 100%;
+            }
         }
     </style>
 
-    <nav class="breadcrumb-nav text-dark">
-        <a href="#" class="breadcrumb-link">Home <i class="fa-solid fa-chevron-right"></i> News <i
-                class="fa-solid fa-chevron-right"></i> Advertise with us </a>
+
+
+    </section>
+    <nav class="breadcrumb-nav text-dark mt-2 mb-4">
+        <a href="#" class="breadcrumb-link">Home <i class="fa-solid fa-chevron-right"></i> NRI Quota</a>
+
     </nav>
+
 
     <style>
         .breadcrumb-nav {
@@ -714,112 +845,100 @@
             color: #888;
         }
 
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: radial-gradient(circle at 10% 50%, #003556, var(--orange));
+            color: white;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
 
-        h4 {
-            color: #00244c;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
             font-weight: 700;
-            font-size: 32px;
+            margin-left: 80px;
+
+        }
+
+        /* Responsive Search */
+        @media(min-width: 600px) {
+            .search-box {
+                flex-direction: row;
+            }
+        }
+
+        /* Animated SVG Background */
+        .svg-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.15;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
     </style>
 
-    <section class="news-header-section py-5">
+    <section class="nri-quota-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <!-- Title -->
-                    <div class="text-start mb-2">
-                        <h4 class="mb-3 fs-1">Advertise with us</h4>
-                        <p>‘Learntech’, a platform designed to elevate your brand/ institute one step at a time.</p>
-                        <h3 class="text-dark"><b>How!</b></h3>
-                        <p>By considering the evolution of the world into a digital landscape while holding onto the
-                            traditional
-                            aspects of marketing, we advertise to students through two primary means of education
-                            marketing
-                            strategies. I.e.</p>
+            <div class="row align-items-start">
 
-                        <div class="button-group mb-4">
-                            <button class="btn-premium">Digital Marketing Activities</button>
-                            <button class="btn-premium btn-orange">Field Marketing Initiatives</button>
-                        </div>
-                        <p>Digital marketing for educational institutions can be done through a plethora of activities.
-                            Some of them are:</p>
+                <!-- Left Content -->
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3 text-dark">NRI Quota in Educational Institutions</h2>
+                    <p class="text-dark">
+                        The NRI quota is a special reservation in Indian educational institutions designed to
+                        accommodate Non-Resident Indian (NRI) students. This quota enables NRI students to secure
+                        admissions in various prestigious schools, colleges, and universities, including medical and
+                        engineering institutions, without competing in the general merit pool. This pathway is crucial
+                        for NRI students who have completed their education abroad and wish to pursue further studies in
+                        India.
+                    </p>
 
+                    <h5 class="fw-bold mt-4">What is NRI Quota?</h5>
+                    <p class="text-dark">
+                        The NRI quota refers to the reserved seats in educational institutions specifically for NRI
+                        students. The term NRI quota full form stands for <strong>Non-Resident Indian Quota</strong>.
+                        This reservation is aimed at making higher education accessible to students who have lived
+                        outside India for a significant period. Seats under this quota are often available in various
+                        professional courses, including Medical, Engineering, and Management programs, and usually come
+                        with a higher fee structure compared to general category seats.
+                    </p>
 
-                        <div class="row g-4 text-center align-items-center marketing-row mt-4">
+                    <h5 class="fw-bold mt-4">Significance of NRI Quota:</h5>
+                    <p class="text-dark">
+                        The NRI quota plays a significant role in the Indian education system by providing several
+                        benefits:
+                    </p>
 
-                            <div class="col-lg-6">
-                                <h5 class="fw-semibold text-white mb-3">Social Media Marketing</h5>
-                                <img src="https://learntechww.com/images/avertise/Social_Media_Marketing_3.png"
-                                    alt="Social Media Marketing" class="img-fluid marketing-img">
-                            </div>
-
-                            <div class="col-lg-6">
-                                <h5 class="fw-semibold text-white mb-3">Content Marketing</h5>
-                                <img src="https://learntechww.com/images/avertise/Social_Media_Marketing_3.png"
-                                    alt="Content Marketing" class="img-fluid marketing-img">
-                            </div>
-
-                            <div class="col-lg-6">
-                                <h5 class="fw-semibold text-white mb-3">Pay-Per-Click</h5>
-                                <img src="https://learntechww.com/images/avertise/Social_Media_Marketing_3.png"
-                                    alt="Pay-Per-Click" class="img-fluid marketing-img">
-                            </div>
-
-                            <div class="col-lg-6">
-                                <h5 class="fw-semibold text-white mb-3">Direct Marketing</h5>
-                                <img src="https://learntechww.com/images/avertise/Social_Media_Marketing_3.png"
-                                    alt="Direct Marketing" class="img-fluid marketing-img">
-                            </div>
-                        </div>
-                        <br>
-                        <h5>Social Media Marketing:</h5>
-                        <p>The marketing educational services rendered through our social media handles are designed to
-                            showcase the distinct features of your institute. We make use of various platforms such as
-                            Instagram, Facebook, Twitter, Youtube and so on to bring forth the unique aspects of higher
-                            education marketing. For example, we aid in creating customised Instagram reels that provide
-                            a glimpse of your institute’s attributes such as its recent achievements, facilities, etc.
-                            Additionally, well-curated YouTube videos are designed to offer a comprehensive view of your
-                            institute’s campus life and more to the right audience at the right time.</p>
-
-                        <h5>Content Marketing:</h5>
-                        <p>We offer excellent content across a range of advertising formats and solutions to enhance
-                            your SEO results, reach your targeted audience, and thereby, yield higher visibility. Some
-                            of our primary content marketing strategies include creating university/ college/
-                            school-specific content that provides a comprehensive overview of each institution, along
-                            with blogs and articles to showcase their distinct features. While the directory of
-                            institutions on our website offers a literary perspective of each institute, we also work on
-                            customised infographics, images, posts and so on to provide a visual representation of the
-                            available information, making it easier to understand. Additionally, we focus on
-                            user-generated content such as reviews and testimonials, as well as interactive content like
-                            quizzes, polls, and surveys to keep the audience engaged throughout their reading
-                            experience.</p>
-
-
-                        <h5>Pay-Per-Click (PPC):</h5>
-                        <p>We specialise in running advertising campaigns on Google ads as a key factor of our marketing
-                            strategy. Some of the advantages of utilising this particular educational marketing solution
-                            include detailed analysis of the ad’s performance with respect to conversions, flexibility
-                            in adjusting campaigns, procuring immediate results while being cost-effective, gaining
-                            insights into the client’s pattern, and much more. Thus, aiding in generating substantial
-                            leads and enhancing brand awareness.</p>
-
-                        <h5>Direct Marketing:
-                        </h5>
-                        <p>Direct marketing is a unique form of digital marketing strategy that aids in communicating
-                            essential information to specific individuals. By joining with us, we will assist in
-                            conveying your institution’s features through various direct marketing tactics, such as
-                            WhatsApp marketing and direct mail advertising. These methods are known to offer efficient
-                            marketing services for schools and facilitate college and university partnerships. The
-                            primary advantages of these strategies include building genuine customer relationships,
-                            increasing brand effectiveness, enabling personalised engagement and more.</p>
-
-                    </div>
+                    <ul class="text-dark ms-3">
+                        <li><strong>Access to Quality Education:</strong> Allows NRI students to gain admission to
+                            renowned Indian institutions without competing with local students in the general category.
+                        </li>
+                        <li><strong>Support for NRI Families:</strong> Helps NRI families who want their children to
+                            study in India but may not meet the standard admission criteria.</li>
+                        <li><strong>Diverse Student Body:</strong> Contributes to a diverse educational environment by
+                            integrating students from different backgrounds and experiences.</li>
+                    </ul>
                 </div>
 
-                <!-- Right: Contact Form -->
+                <!-- Right Form -->
                 <div class="col-lg-4">
-                    <div class="card border-0 p-4 rounded-3 contact-card mb-5">
-                        <h4 class="fw-bold text-center mb-3">Contact Us</h4>
+                    <div class="nri-form-box shadow-sm px-5 py-2 rounded-3">
+                        <h5 class="fw-bold text-center mb-4">Expert Guidance for Securing NRI Quota Seats</h5>
+
                         <form>
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Full Name*" required>
@@ -827,9 +946,10 @@
                             <div class="mb-3">
                                 <input type="email" class="form-control" placeholder="Email ID*" required>
                             </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">🇮🇳 +91</span>
-                                <input type="tel" class="form-control" placeholder="Mobile Number*" required>
+                            <div class="mb-3 d-flex">
+                                <span class="input-group-text border-end-0 bg-white">+91</span>
+                                <input type="tel" class="form-control border-start-0" placeholder="Mobile Number*"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Interested Course*" required>
@@ -841,405 +961,489 @@
                                 <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
                             </div>
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" id="terms" required>
-                                <label class="form-check-label" for="terms">
-                                    By clicking this, I agree to the <a href="#"
-                                        class="text-primary text-decoration-none">Terms & Conditions</a>
+                                <input class="form-check-input" type="checkbox" id="terms">
+                                <label class="form-check-label small text-dark" for="terms">
+                                    By clicking this, I agree to the <a href="#" class="text-decoration-none">Terms &
+                                        Conditions</a>
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">Submit</button>
+                            <button type="submit" class="btn btn-orange w-100 py-2 fw-semibold">Submit</button>
                         </form>
                     </div>
+                    <div class="spec-container">
+                        <h5 class="text-center mt-5">Top Trending Courses</h5>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Marketing.svg" alt="Marketing" class="spec-img me-0">
+                            <span>Marketing Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Finance.svg" alt="Finance" class="spec-img me-0">
+                            <span>Finance Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Human Resource.svg" alt="Human Resource"
+                                class="spec-img me-0">
+                            <span>Human Resource Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Marketing.svg" alt="Marketing" class="spec-img me-0">
+                            <span>Marketing Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Finance.svg" alt="Finance" class="spec-img me-0">
+                            <span>Finance Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Human Resource.svg" alt="Human Resource"
+                                class="spec-img me-0">
+                            <span>Human Resource Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Marketing.svg" alt="Marketing" class="spec-img me-0">
+                            <span>Marketing Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Finance.svg" alt="Finance" class="spec-img me-0">
+                            <span>Finance Management</span>
+                        </a>
+                        <a href="#" class="spec-card d-flex align-items-center mb-3 p-2">
+                            <img src="specializations-imgs/Human Resource.svg" alt="Human Resource"
+                                class="spec-img me-0">
+                            <span>Human Resource Management</span>
+                        </a>
 
-                    <img src="https://api.learntechww.com/banners/logo1735728612888.webp" class="img-fluid" alt="">
-                </div>
-                <p class="text-center">Efficient education services marketing is necessary for any institute to thrive.
-                    By
-                    advertising with us, not only will your institute gain global recognition, but also succeed in
-                    nurturing
-                    a group of potential individuals, thereby moulding the pioneers of tomorrow.</p>
-
-                <h4 class="text-center">So Why the Wait!!!</h4>
-                <h5 class="text-center">Partner With Us!</h5>
-            </div>
-    </section>
-
-    <style>
-        .contact-card {
-            background-color: #eae5e0 !important;
-        }
-
-        .contact-card input,
-        .contact-card textarea {
-            border-radius: 8px;
-        }
-
-        .marketing-row {
-            background: transparent;
-            border-radius: 20px;
-            padding: 1rem;
-           
-        }
-
-        .marketing-row h5 {
-            font-family: "Poppins", sans-serif;
-            letter-spacing: 0.5px;
-            color: #000 !important;
-            font-size: 22px !important;
-        }
-
-        .marketing-img {
-            width: 70px;
-            /* not too big */
-            height: auto;
-            transition: transform 0.4s ease;
-            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.25));
-        }
-
-        .marketing-img:hover {
-            transform: scale(1.1);
-        }
-
-        .button-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem;
-        }
-
-        .btn-premium {
-            position: relative;
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            color: #fff;
-            background: linear-gradient(135deg, #003556, #005f8f);
-            border: none;
-            border-radius: 50px;
-            padding: 0.8rem 1.8rem;
-            cursor: pointer;
-            overflow: hidden;
-            transition: all 0.4s ease;
-        }
-
-        .btn-premium::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-            transition: all 0.5s ease;
-        }
-
-        .btn-premium:hover::before {
-            left: 100%;
-        }
-
-        .btn-premium:hover {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 8px 25px rgba(0, 85, 120, 0.3);
-        }
-
-        /* Orange Version */
-        .btn-orange {
-            background: linear-gradient(135deg, #f1652a, #ff8847);
-            box-shadow: 0 5px 20px rgba(241, 101, 42, 0.3);
-            border-radius: 50px !important;
-        }
-
-        .btn-orange:hover {
-            box-shadow: 0 8px 30px rgba(241, 101, 42, 0.45);
-        }
-    </style>
-
-
-    <!-- =========================================carousal cards -->
-
-      <!-- ================================================================carousal -->
-
-
-    <section class="cards-section mt-5">
-        <h4 class="text-center mb-3">Top Featured MBA Colleges</h4>
-        <!-- Swiper buttons -->
-        <button class="swiper-btn prev-btn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="swiper-btn next-btn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://api.learntechww.com/college_banner_image/logo1747821985634.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Card 1</h3>
-                    <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> Lorem ipsum dolor sit </p>
-                    <div class="college-btn-box d-flex gap-5 mt-3">
-                        <a href="#" class="apply-now">Apply Now</a>
-                        <a href="#" class="view-now">View More</a>
                     </div>
+                    <style>
+                        .spec-card img {
+                            height: 50px;
+                            width: 100px;
+                            filter: contrast(200%);
+                        }
+
+                        .spec-card {
+                            background: #fff;
+                            /* or a subtle color */
+                            border-radius: 4px;
+                            text-decoration: none;
+                            color: #000;
+                            transition: transform 0.2s, box-shadow 0.2s;
+                            border: 1px solid rgb(157, 164, 185);
+                            border-left: 4px solid rgb(255, 132, 0);
+                        }
+
+                        .spec-card:hover {
+                            transform: translateY(-3px);
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                        }
+
+                        .spec-img {
+                            width: 40px;
+                            /* small icon size */
+                            height: 80px;
+                        }
+
+                        .spec-card span {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    </style>
+
+                    <img src="https://api.learntechww.com/banners/logo1737784881496.jpg" class="img-fluid" alt="">
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://api.learntechww.com/college_banner_image/logo1757328260477.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Card 2</h3>
-                    <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> Nulla vitae elit libero, a</p>
-                    <div class="college-btn-box d-flex gap-5 mt-3">
-                        <a href="#" class="apply-now">Apply Now</a>
-                        <a href="#" class="view-now">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://api.learntechww.com/college_banner_image/logo1747822953918.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Card 3</h3>
-                    <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Curabitur blandit tempus </p>
-                    <div class="college-btn-box d-flex gap-5 mt-3">
-                        <a href="#" class="apply-now">Apply Now</a>
-                        <a href="#" class="view-now">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://api.learntechww.com/college_banner_image/logo1747820987012.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Card 4</h3>
-                    <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Integer posuere erat a </p>
-                    <div class="college-btn-box d-flex gap-5 mt-3">
-                        <a href="#" class="apply-now">Apply Now</a>
-                        <a href="#" class="view-now">View More</a>
-                    </div>
-                </div>
-            </div>
         </div>
+
     </section>
 
+
     <style>
-        .btn-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-            /* adjust as needed */
-        }
+        .btn-orange {
+            position: relative;
+            display: inline-block;
+            background-color: var(--orange) !important;
+            color: #ffa94d;
+            /* border: 2px solid #ffa94d; */
+            border-radius: 0;
 
-
-
-        .cards-container {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: nowrap;
-            /* important: no wrapping */
-            overflow-x: hidden;
-            /* hide scrollbar */
-            scroll-behavior: smooth;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        .card {
-            flex: 0 0 auto;
-            /* prevents shrinking */
-        }
-
-        /* === Buttons on sides === */
-        .swiper-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: linear-gradient(90deg, #fd9b28, #f1652a);
-            border: none;
-            color: #fff;
-            font-size: 1.5rem;
-            padding: 5px 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 5;
+            font-weight: 600;
+            overflow: hidden;
             transition: all 0.3s ease;
         }
 
-        .swiper-btn:hover {
-            background: #fff;
-            color: #fd9b28;
-            transform: translateY(-50%) scale(1);
-            border: 2px solid var(--orange);
+        .btn-orange::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0.6) 50%,
+                    rgba(255, 255, 255, 0.3) 100%);
+            transform: skewX(-25deg);
+            transition: all 0.5s ease;
         }
 
-        .prev-btn {
-            left: 50px;
-        }
-
-        .next-btn {
-            right: 50px;
-        }
-
-        .view-now {
-            border-radius: 7px;
-            display: inline-block;
-            padding: 7px 8px;
-            color: #000000;
-            background: transparent !important;
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            border: 2px solid var(--orange);
-            font-size: 12px;
-            margin-left: 14px;
-        }
-
-        .apply-now {
-            border-radius: 10px;
-            display: inline-block;
-            padding: 7px 8px;
+        .btn-orange:hover {
+            background-color: #ffa94d;
             color: #ffffff;
-            background: var(--orange);
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            border: 2px solid transparent;
-            font-size: 14px;
+
         }
 
-        /* 
-            .apply-now::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-                transition: all 0.5s ease;
+        .btn-orange:hover::before {
+            left: 125%;
+            transition: all 0.5s ease;
+        }
+
+        .nri-quota-section {
+            background-color: #f8f9fb;
+        }
+
+        .nri-form-box {
+            background-color: #fcf1e7;
+            transition: all 0.3s ease;
+        }
+
+        .nri-form-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .nri-form-box input,
+        .nri-form-box textarea {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+
+        .nri-form-box input:focus,
+        .nri-form-box textarea:focus {
+            border-color: #0d6efd;
+            box-shadow: none;
+        }
+    </style>
+
+
+    <section class="nri-banner py-5 text-center text-white position-relative">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Do You Qualify for Admission under the NRI Category?</h2>
+            <p class="bg-white text-dark d-inline-block px-3 py-2 rounded mb-3">
+                Connect with our Expert Counsellors to Acquire NRI Quota Seats.
+            </p>
+            <br>
+            <a href="#" class="btn btn-primary mt-2">Request a Call Back</a>
+        </div>
+    </section>
+
+
+    <style>
+        .nri-banner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 60px !important;
+            /* Darken the background image */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('nribanner.jpg') center/cover no-repeat;
+        }
+
+
+        .nri-banner p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .nri-banner .btn {
+            padding: 0.6rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+    </style>
+
+    
+        <!-- ==============================================CAROUSAL FOR COURSES -->
+
+        <section class="cards-section mt-5">
+            <h4 class="text-center">TOP 10 MBA COLLEGES</h4>
+
+            <!-- Swiper buttons -->
+            <button class="swiper-btn prev-btn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="swiper-btn next-btn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1747821985634.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Card 1</h3>
+                        <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> Lorem ipsum dolor sit </p>
+                        <div class="college-btn-box d-flex gap-5 mt-3">
+                            <a href="#" class="apply-now">Apply Now</a>
+                            <a href="#" class="view-now">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1757328260477.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Card 2</h3>
+                        <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> Nulla vitae elit libero, a
+                        </p>
+                        <div class="college-btn-box d-flex gap-5 mt-3">
+                            <a href="#" class="apply-now">Apply Now</a>
+                            <a href="#" class="view-now">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1747822953918.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Card 3</h3>
+                        <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Curabitur blandit tempus </p>
+                        <div class="college-btn-box d-flex gap-5 mt-3">
+                            <a href="#" class="apply-now">Apply Now</a>
+                            <a href="#" class="view-now">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://api.learntechww.com/college_banner_image/logo1747820987012.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Card 4</h3>
+                        <p><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Integer posuere erat a </p>
+                        <div class="college-btn-box d-flex gap-5 mt-3">
+                            <a href="#" class="apply-now">Apply Now</a>
+                            <a href="#" class="view-now">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box text-center">
+                 <button class="btn btn-orange">View More</button>
+            </div>
+           
+        </section>
+
+        <style>
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                /* adjust as needed */
             }
 
-            .apply-now:hover::before {
-                left: 100%;
-            } */
-
-        .apply-now:hover {
-            background: #fff;
-            color: #000000;
-            border-color: #fd9b28;
 
 
-        }
-
-        .cards-section-title {
-            color: #f5b030;
-            /* Matches your orange theme */
-            text-align: center;
-            /* Centered above the cards */
-            font-size: 3rem;
-            /* Adjust size */
-            font-weight: bold;
-
-            /* Space between heading and cards */
-        }
-
-        /* ==== Base Section ==== */
-        .cards-section {
-            position: relative;
-            background-color: #ffffff;
-            padding-bottom: 60px;
-            overflow: hidden;
-        }
-
-        /* ==== Layout ==== */
-        .cards-container {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1500px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* ==== Card ==== */
-        .card {
-            background: #ffffff;
-            color: #000000;
-            flex: 1 1 300px;
-            max-width: 300px;
-            overflow: hidden;
-
-            transition: all 0.5s ease;
-            position: relative;
-        }
-
-        /* Image Section */
-        .card-image {
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-        }
-
-        /* Content Section */
-        .card-content {
-            padding: 1.5rem;
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-
-        .card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .card p {
-            font-size: 16px !important;
-            line-height: 1.5;
-
-        }
-
-
-        .card:hover {
-            transform: translateY(-10px) scale(1.02);
-
-        }
-
-        .card:hover .card-image img {
-            transform: scale(1.1);
-        }
-
-        .card:hover .card-content {
-            transform: translateY(-5px);
-            opacity: 1;
-        }
-
-        /* ==== Responsive ==== */
-        @media (max-width: 768px) {
             .cards-container {
-                flex-direction: column;
-                align-items: center;
+                display: flex;
+                gap: 2rem;
+                flex-wrap: nowrap;
+                /* important: no wrapping */
+                overflow-x: hidden;
+                /* hide scrollbar */
+                scroll-behavior: smooth;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
 
             .card {
-                max-width: 90%;
+                flex: 0 0 auto;
+                /* prevents shrinking */
             }
-        }
-    </style>
+
+            /* === Buttons on sides === */
+            .swiper-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: white;
+                border: none;
+                color: #000000;
+                font-size: 1.5rem;
+                padding: 5px 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 5;
+                transition: all 0.3s ease;
+            }
+
+            .swiper-btn:hover {
+                background: #fff;
+                color: #fd9b28;
+                transform: translateY(-50%) scale(1);
+                border: 2px solid var(--orange);
+            }
+
+            .prev-btn {
+                left: 50px;
+            }
+
+            .next-btn {
+                right: 50px;
+            }
+
+            .view-now {
+                border-radius: 7px;
+                display: inline-block;
+                padding: 7px 8px;
+                color: #000000;
+                background: transparent !important;
+                font-weight: 600;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s ease;
+                text-decoration: none;
+                border: 2px solid var(--orange);
+                font-size: 12px;
+                margin-left: 14px;
+            }
+
+            .apply-now {
+                border-radius: 10px;
+                display: inline-block;
+                padding: 7px 8px;
+                color: #ffffff;
+                background: var(--orange);
+                font-weight: 600;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s ease;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-size: 14px;
+            }
+
+          
+
+            .apply-now:hover {
+                background: #fff;
+                color: #000000;
+                border-color: #fd9b28;
+
+
+            }
+
+            .cards-section-title {
+                color: #f5b030;
+                /* Matches your orange theme */
+                text-align: center;
+                /* Centered above the cards */
+                font-size: 3rem;
+                /* Adjust size */
+                font-weight: bold;
+
+                /* Space between heading and cards */
+            }
+
+            /* ==== Base Section ==== */
+            .cards-section {
+                position: relative;
+                background-color: #ffffff;
+                padding-bottom: 60px;
+                overflow: hidden;
+            }
+
+            /* ==== Layout ==== */
+            .cards-container {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 1500px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            /* ==== Card ==== */
+            .card {
+                background: #ffffff;
+                color: #000000;
+                flex: 1 1 300px;
+                max-width: 300px;
+                overflow: hidden;
+
+                transition: all 0.5s ease;
+                position: relative;
+            }
+
+            /* Image Section */
+            .card-image {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            .card-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+
+            /* Content Section */
+            .card-content {
+                padding: 1.5rem;
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
+
+            .card h3 {
+                font-size: 1.3rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .card p {
+                font-size: 16px !important;
+                line-height: 1.5;
+
+            }
+
+
+            .card:hover {
+                transform: translateY(-10px) scale(1.02);
+
+            }
+
+            .card:hover .card-image img {
+                transform: scale(1.1);
+            }
+
+            .card:hover .card-content {
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+
+            /* ==== Responsive ==== */
+            @media (max-width: 768px) {
+                .cards-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card {
+                    max-width: 90%;
+                }
+            }
+        </style>
+
+
 
 
     <!-- -==================================================FOOTER SECTION -->
@@ -1249,7 +1453,7 @@
         <div class="container">
             <div class="row">
                 <!-- Logo & Info -->
-                <div class="col-lg-4 col-md-6 mb-4 left-text ">
+                <div class="col-lg-4 col-md-6 mb-4 left-text">
                     <div class="footer-logo mb-3">
                         <img src="Top MBA Study Logo_Color.svg" alt="">
                     </div>
@@ -1261,24 +1465,29 @@
                         Block,<br>Jayanagar,
                         Bangalore, Karnataka - 560041</p>
                 </div>
-
                 <!-- Info -->
                 <div class="col-lg-2 col-md-6 mb-4 pt-5">
                     <h6 class="footer-title">Info</h6>
                     <ul class="list-unstyled">
                         <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
-                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i> advertise-with-us</a></li>
+                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i>
+                                advertise-with-us</a></li>
                         <li><a href="article.html"><i class="fa-solid fa-angles-right"></i> article</a></li>
-                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a></li>
+                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a>
+                        </li>
                         <li><a href="college.html"><i class="fa-solid fa-angles-right"></i> college</a></li>
                         <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i> exam-profile</a></li>
                         <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
-                       <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner Specializations</a></li>
+                        <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner
+                                Specializations</a></li>
                         <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a></li>
                         <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>
-                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a></li>
-                         <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a></li>
-                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i> terms-&-condition</a></li>
+                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a>
+                        </li>
+                        <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a>
+                        </li>
+                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i>
+                                terms-&-condition</a></li>
                     </ul>
                 </div>
 
@@ -1467,7 +1676,7 @@
         }
 
         .footer p {
-            color: rgb(255, 255, 255) !important;
+            color: white;
         }
 
         .form-bg {
