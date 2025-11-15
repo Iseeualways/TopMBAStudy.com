@@ -916,11 +916,11 @@
 
                 <div class="container py-0">
                     <!-- Breadcrumb -->
-                    <nav class="breadcrumb-nav text-dark text-start mt-2 mb-4" >
+                    <nav class="breadcrumb-nav text-dark text-start mt-2 mb-4">
                         <a href="#" class="breadcrumb-link">
                             Home<i class="fa-solid fa-chevron-right mx-1"></i>Article</a>
                     </nav>
-                   
+
                     <!-- Tabs -->
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
@@ -1013,67 +1013,48 @@
                     </div>
                 </div>
             </section>
-            <div class="pagination-box m-5">
-                <nav aria-label="...">
-                    <ul class="pagination">
-                        <li class="page-item"><a href="#" class="page-link"><i class="bi bi-caret-left-fill"></i></a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active">
-                            <a class="page-link" href="#" aria-current="page">2</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-caret-right-fill"></i></a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="slr-pagination my-5">
+                <button class="slr-page prev">&laquo; Prev</button>
+                <button class="slr-page active">1</button>
+                <button class="slr-page">2</button>
+                <button class="slr-page">3</button>
+                <button class="slr-page next">Next &raquo;</button>
             </div>
 
             <style>
-                .pagination-box {
+                .slr-pagination {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    /* centers the buttons */
+                    gap: 10px;
+                    margin-top: 40px;
                 }
 
-                .pagination {
-                    gap: 8px;
-                }
-
-                .page-item .page-link {
-                    border: none;
-                    background: rgba(255, 255, 255, 0.15);
-                    color: var(--orange);
-                    font-weight: 600;
+                .slr-page {
+                    padding: 8px 14px;
                     border-radius: 8px;
-                    padding: 10px 16px;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-                    backdrop-filter: blur(6px);
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    color: #1b2a36;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-weight: 600;
                 }
 
-                .page-item .page-link:hover {
-                    background: linear-gradient(135deg, #ff9500, #ffb84d);
+                .slr-page:hover:not(.active) {
+                    background: #1b2a36;
                     color: #fff;
-                    transform: translateY(-2px);
-                    box-shadow: 0 6px 15px rgba(26, 35, 126, 0.3);
                 }
 
-                .page-item.active .page-link {
-                    background: linear-gradient(135deg, #ff6a00, #ff9500);
+                .slr-page.active {
+                    background: #1b2a36;
                     color: #fff;
-                    font-weight: 700;
-                    box-shadow: 0 6px 20px rgba(26, 35, 126, 0.4);
+                    border-color: #1b2a36;
                 }
 
-                .page-link i {
-                    font-size: 1.1rem;
-                    vertical-align: middle;
-                }
-
-                .page-item.disabled .page-link {
-                    opacity: 0.6;
-                    pointer-events: none;
+                .slr-page:disabled {
+                    opacity: 0.5;
+                    cursor: not-allowed;
                 }
             </style>
 
@@ -1101,25 +1082,33 @@
                                 Bangalore, Karnataka - 560041</p>
                         </div>
 
-                       <!-- Info -->
-                <div class="col-lg-2 col-md-6 mb-4 pt-5">
-                    <h6 class="footer-title">Info</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
-                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i> advertise-with-us</a></li>
-                        <li><a href="article.html"><i class="fa-solid fa-angles-right"></i> article</a></li>
-                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a></li>
-                        <li><a href="college.html"><i class="fa-solid fa-angles-right"></i> college</a></li>
-                        <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i> exam-profile</a></li>
-                        <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
-                      <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner Specializations</a></li>
-                        <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a></li>
-                        <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>
-                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a></li>
-                         <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a></li>
-                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i> terms-&-condition</a></li>
-                    </ul>
-                </div>
+                        <!-- Info -->
+                        <div class="col-lg-2 col-md-6 mb-4 pt-5">
+                            <h6 class="footer-title">Info</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                                <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i>
+                                        advertise-with-us</a></li>
+                                <li><a href="article.html"><i class="fa-solid fa-angles-right"></i> article</a></li>
+                                <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i>
+                                        college-detail</a></li>
+                                <li><a href="college.html"><i class="fa-solid fa-angles-right"></i> college</a></li>
+                                <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i>
+                                        exam-profile</a></li>
+                                <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
+                                <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner
+                                        Specializations</a></li>
+                                <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a>
+                                </li>
+                                <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>
+                                <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i>
+                                        privacy-policy</a></li>
+                                <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i>
+                                        specializations</a></li>
+                                <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i>
+                                        terms-&-condition</a></li>
+                            </ul>
+                        </div>
 
                         <!-- Quick Links -->
                         <div class="col-lg-2 col-md-6 mb-4  pt-5">

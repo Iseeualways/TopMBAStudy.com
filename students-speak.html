@@ -1,0 +1,1375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student-speak</title>
+    <link rel="preload" as="image" href="poster.jpg">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Free CDN (no SRI/crossorigin to avoid blocking) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        p {
+            color: #000;
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 20px !important;
+            color: #000 !important;
+            font-weight: 700 !important;
+        }
+
+        h3 {
+            font-size: 16px !important;
+            color: #000 !important;
+            font-weight: 700 !important;
+        }
+
+        h4 {
+            color: #00244c;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .btn-orange {
+            position: relative;
+            display: inline-block;
+            background-color: var(--orange) !important;
+            color: #ffa94d;
+            border: 2px solid #ffa94d;
+            border-radius: 0;
+            font-weight: 600;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-orange::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0.6) 50%,
+                    rgba(255, 255, 255, 0.3) 100%);
+            transform: skewX(-25deg);
+            transition: all 0.5s ease;
+        }
+
+        .btn-orange:hover {
+            background-color: #ffa94d;
+            color: #ffffff;
+
+        }
+
+        .btn-orange:hover::before {
+            left: 125%;
+            transition: all 0.5s ease;
+        }
+
+        /* Vibrant gradient background */
+        .vibrant-gradient {
+            background: linear-gradient(135deg,
+                    #00a2e1 0%,
+                    /* Bright blue */
+                    #feda16 35%,
+                    /* Vibrant yellow */
+                    #f1652a 70%,
+                    /* Strong orange/red */
+                    #0b7bbf 100%
+                    /* Dark blue */
+                );
+        }
+
+        :root {
+            --blue: #0b7bbf;
+            --light-blue: #00a2e1;
+            --orange: #f1652a;
+            --yellow: #feda16;
+            --und-green: #ffae00;
+            --ink: #ffffff;
+            --paper: #ffffff;
+            --headline: clamp(26px, 2.5vw + 16px, 40px);
+            --mega: clamp(88px, 15vw, 260px);
+            --gutter: clamp(16px, 2vw, 28px);
+            --safe-left: clamp(16px, 6vw, 96px);
+            --safe-bottom: clamp(16px, 6vh, 120px);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: "Poppins" !important;
+            color: var(--paper);
+            background: var(--ink);
+        }
+
+        .infobar {
+            background: #003556;
+            color: #fff;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px var(--gutter);
+            height: 50px;
+
+
+        }
+
+        .infobar .left,
+        .infobar .center,
+        .infobar .right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-inline: 65px;
+        }
+
+        .infobar .left a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .infobar .left a:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .infobar .center {
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+        }
+
+        .infobar .right {
+            justify-content: flex-end;
+        }
+
+        /* Main navbar */
+        .topbar {
+            background: #ffffff;
+            color: #fff;
+            height: 70px;
+        }
+
+        .topbar-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 var(--gutter);
+            gap: 20px;
+            height: 100%;
+        }
+
+        .btn {
+            background-color: #f1652a !important;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .brand img {
+            height: 75px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 16px;
+            opacity: .9;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Thin top info bar -->
+    <div class="infobar">
+        <div class="left">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)" class="social twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+
+
+            <!-- ✨ New pulsing text -->
+            <span class="pulse-text"> MBA Admissions 2026</span>
+        </div>
+
+        <style>
+            /* Flowing gradient + pulsing glow + soft grow/shrink */
+            .pulse-text {
+                position: relative;
+                font-weight: 700;
+                font-size: 23px;
+                margin-left: 120px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #ffffff;
+                /* fallback color */
+                background: linear-gradient(90deg,
+                        rgba(255, 255, 255, 0.2) 0%,
+                        #feda16 20%,
+                        #f1652a 40%,
+                        #00b7ff 60%,
+                        rgba(255, 255, 255, 0.2) 100%);
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation:
+                    highlightFlow 3.5s linear infinite,
+                    pulseGlow 2.5s ease-in-out infinite,
+                    pulseScale 3s ease-in-out infinite;
+                white-space: nowrap;
+                display: inline-block;
+            }
+
+            /* Gradient flowing animation */
+            @keyframes highlightFlow {
+                0% {
+                    background-position: 200% center;
+                }
+
+                50% {
+                    background-position: 100% center;
+                }
+
+                100% {
+                    background-position: -200% center;
+                }
+            }
+
+            /* Soft glowing pulse */
+            @keyframes pulseGlow {
+                0% {
+                    filter: brightness(0.9) drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
+                }
+
+                50% {
+                    filter: brightness(1.5) drop-shadow(0 0 8px rgba(255, 213, 0, 0.6));
+                }
+
+                100% {
+                    filter: brightness(0.9) drop-shadow(0 0 2px rgba(255, 255, 255, 0.2));
+                }
+            }
+
+            /* Gentle size pulse (grow and shrink) */
+            @keyframes pulseScale {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.08);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+
+            .left {
+                display: flex;
+                gap: 10px;
+            }
+
+            .left a.social {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 16px;
+                transition: all 0.3s ease;
+
+            }
+
+            .left i {
+                margin-top: 2px;
+            }
+
+
+            .facebook {
+                background-color: #1877f2;
+            }
+
+            .twitter {
+                background-color: #000000;
+            }
+
+
+            .instagram {
+                background: radial-gradient(circle at 30% 107%, #a19b58 0%,
+                        #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            }
+
+
+            .linkedin {
+                background-color: #0077b5;
+            }
+
+            .left a.social:hover {
+                transform: translateY(-3px) scale(1.05);
+                opacity: 0.9;
+            }
+        </style>
+
+
+
+        <div class="right d-flex align-items-center gap-4 fs-5 flex-wrap text-white">
+            <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-phone" style="color: red;"></i>
+                <span class="fs-6">1800 120 8696</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-envelope" style="color: #fff;"></i>
+                <span class="fs-6">info@topmbastudy.com</span>
+            </div>
+
+            <button class="btn py-1 px-3 btn-orange">Write a Review</button>
+        </div>
+
+        <style>
+            .right i {
+                margin-top: 4px;
+            }
+
+            .btn-orange {
+                background-color: #fd9b28;
+                color: #fff !important;
+                border: none;
+                border-radius: 8px !important;
+                transition: all 0.3s ease;
+            }
+
+            .btn-orange:hover {
+                background-color: #e9851f;
+
+            }
+        </style>
+
+    </div>
+
+
+    <!-- Main navbar -->
+    <header class="topbar" role="banner">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html">
+                <img src="Top MBA Study Logo_Color.svg" alt="Logo">
+            </a>
+
+            <nav aria-label="Primary">
+                <a href="index.html">Home</a>
+
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Who We Are</a>
+                        <a href="#">Vision & Mission</a>
+                        <a href="#">What Do We Offer?</a>
+                        <a href="#">Why Choose Us?</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="courses.html">Top MBA Colleges</a>
+                    <div class="dropdown-content top-colleges">
+                        <div class="dropdown-column">
+                            <h4>Colleges By State</h4>
+                            <a href="#">Maharashtra</a>
+                            <a href="#">Karnataka</a>
+                            <a href="#">Tamil Nadu</a>
+                            <a href="#">Delhi NCR</a>
+                            <a href="#">West Bengal</a>
+                            <a href="#">Gujarat</a>
+                            <a href="#" class="view-more">View More <i class="fa-solid fa-location-arrow"></i></a>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <h4>Colleges By City</h4>
+                            <a href="#">Mumbai</a>
+                            <a href="#">Bangalore</a>
+                            <a href="#">Chennai</a>
+                            <a href="#">Pune</a>
+                            <a href="#">Delhi</a>
+                            <a href="#">Hyderabad</a>
+                            <a href="#">Kolkata</a>
+                            <a href="#" class="view-more">View More <i class="fa-solid fa-location-arrow"></i></a>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <h4>Popular Colleges</h4>
+                            <a href="#">IIM Ahmedabad</a>
+                            <a href="#">IIM Bangalore</a>
+                            <a href="#">ISB Hyderabad</a>
+                            <a href="#">XLRI Jamshedpur</a>
+                            <a href="#">SPJIMR Mumbai</a>
+                            <a href="#">MDI Gurgaon</a>
+                            <a href="#">NMIMS Mumbai</a>
+                            <a href="#" class="view-more">View More <i class="fa-solid fa-location-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="specializations.html">MBA Specializations</a>
+                    <div class="dropdown-content specializations">
+                        <div class="spec-grid">
+                            <a href="#"><img src="specializations-imgs/Marketing.svg" width="20%" alt=""> Marketing
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Finance.svg" width="20%" alt=""> Finance
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Human Resource.svg" width="20%" alt=""> Human
+                                Resource Management</a>
+                            <a href="#"><img src="specializations-imgs/International Business.svg" width="20%" alt="">
+                                International Business</a>
+                            <a href="#"><img src="specializations-imgs/International Business.svg" width="20%" alt="">
+                                Operations Management</a>
+                            <a href="#"><img src="specializations-imgs/Information Technology.svg" width="20%" alt="">
+                                Information Technology</a>
+                            <a href="#"><img src="specializations-imgs/Business Analytics.svg" width="20%" alt="">
+                                Business Analytics</a>
+                            <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
+                                Entrepreneurship</a>
+                            <a href="#"><img src="specializations-imgs/Entrepreneurship.svg" width="20%" alt="">
+                                Healthcare Management</a>
+                            <a href="#"><img src="specializations-imgs/Logistics & Supply Chain.svg" width="20%" alt="">
+                                Logistics & Supply Chain</a>
+                            <a href="#"><img src="specializations-imgs/Retail Management.svg" width="20%" alt="">
+                                Retail
+                                Management</a>
+                            <a href="#"><img src="specializations-imgs/Tourism & Hospitality.svg" width="20%" alt="">
+                                Tourism & Hospitality</a>
+                            <a href="#"><img src="specializations-imgs/Project Management.svg" width="20%" alt="">
+                                Project Management</a>
+                            <a href="#"><img src="specializations-imgs/Agri-Business.svg" width="20%" alt="">
+                                Agri-Business</a>
+                            <a href="#"><img src="specializations-imgs/Media & Communication.svg" width="20%" alt="">
+                                Media & Communication</a>
+                            <a href="#" class="view-more mx-3 fs-6">View More <i
+                                    class="fa-solid fa-location-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="exams.html">Entrance Exam</a>
+                    <div class="dropdown-content">
+                        <a href="#">CAT</a>
+                        <a href="#">XAT</a>
+                        <a href="#">CMAT</a>
+                        <a href="#">ATMA</a>
+                        <a href="#">NMAT by GMAC</a>
+                        <a href="#">SNAP</a>
+                        <a href="#">GMAT</a>
+                        <a href="#">KMAT</a>
+                        <a href="#">PGCET</a>
+                        <a href="#">CUET-PG</a>
+                        <a href="#" class="view-more">View More <i class="fa-solid fa-location-arrow"></i></a>
+                        <!-- <a href="#">MAH-CET</a>
+                        <a href="#">AP ICET</a>
+                        <a href="#">TANCET</a> -->
+                    </div>
+                </div>
+                <a href="#">Articles</a>
+                <a href="#">More</a>
+            </nav>
+
+            <style>
+                /* --------------------
+   Base Setup
+-------------------- */
+
+
+                .spec-grid img {
+                    border: 1px solid rgb(228, 228, 228);
+                    background-color: #dcecfa;
+                    border-radius: 20px;
+                }
+
+                /* --------------------
+   Navigation & Dropdown Base
+-------------------- */
+                nav {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    position: relative;
+                }
+
+                .dropdown {
+                    position: relative;
+                }
+
+                .dropdown>a {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .dropdown-content {
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(10px);
+                    opacity: 0;
+                    pointer-events: none;
+                    background: #ffffff;
+                    min-width: 200px;
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    padding: 10px;
+                    z-index: 999;
+                    transition: all 0.25s ease;
+                    font-family: "Poppins", sans-serif !important;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(0);
+                    pointer-events: auto;
+                }
+
+                /* --------------------
+   Headings
+-------------------- */
+                .dropdown-content h4,
+                .dropdown-column h4 {
+                    color: var(--orange);
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                /* --------------------
+   Dropdown Links with Arrow Animation
+-------------------- */
+                .dropdown-content a,
+                .dropdown-column a {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 14.5px;
+                    padding: 6px 10px;
+                    border-radius: 6px;
+                    font-weight: 500;
+                    transition: all 0.35s ease;
+                    transform: translateX(0);
+                }
+
+                /* Hidden arrow before hover */
+                .dropdown-content a::before,
+                .dropdown-column a::before {
+                    content: "\f101";
+                    /* Font Awesome right arrow (fa-arrow-right) */
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    opacity: 0;
+                    transform: translateX(-6px);
+                    transition: all 0.35s ease;
+                    font-size: 13px;
+                    color: var(--orange);
+
+                }
+
+                /* On hover: arrow appears and moves right, text slides a bit */
+                .dropdown-content a:hover,
+                .dropdown-column a:hover {
+                    color: #002147;
+                    transform: translateX(4px);
+                    font-weight: 600 !important;
+                }
+
+                .dropdown-content a:hover::before,
+                .dropdown-column a:hover::before {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                /* --------------------
+   View More Button
+-------------------- */
+                .dropdown-content .view-more {
+                    display: inline-block;
+                    color: rgb(0, 76, 114);
+                    border-radius: 20px;
+                    font-size: 13px;
+                    text-decoration: none;
+                    transition: background 0.3s ease;
+                }
+
+                /* --------------------
+   Layout Variants
+-------------------- */
+                .spec-grid {
+                    min-width: 380px;
+                }
+
+                .dropdown-content.top-colleges {
+                    min-width: 800px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                }
+
+                .dropdown-content.specializations {
+                    min-width: 420px;
+                    columns: 2;
+                }
+
+                /* --------------------
+   Dropdown Fade Animation
+-------------------- */
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        </div>
+    </header>
+
+
+
+    <!-- =========================================================Hero Section -->
+    <section class="hero position-relative">
+        <div class="container py-5 position-relative hero-content">
+            <div class="row align-items-center text-center">
+                <!-- Right: Exam Info -->
+                <div class="col-md-12 text-white">
+                    <h1 class="fw-bold mb-3 mx-0">
+                        Success Stories of Top MBA Study.
+                    </h1>
+                    <div class="search-box mx-auto mt-0">
+                        <input type="text" placeholder="Search for Entrance Exam" class="form-control" />
+                    </div>
+                    <style>
+                        .search-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(96, 89, 89, 0);
+                            backdrop-filter: blur(10px);
+                            border-radius: 20px;
+                            padding: 10px 20px;
+                            gap: 10px;
+                            width: 80%;
+                            /* makes it long */
+                            max-width: 300px;
+                            /* controls max width */
+                            margin: 10px auto;
+                            /* centers horizontally */
+                        }
+
+                        .search-box input {
+                            width: 100%;
+                            padding: 16px 20px;
+                            border: none;
+                            border-radius: 10px;
+                            font-size: 1rem;
+                            outline: none;
+                            background: rgb(255, 255, 255);
+                            color: var(--text-dark);
+                        }
+
+                        /* Responsive for larger screens */
+                        @media (min-width: 600px) {
+                            .search-box {
+                                flex-direction: row;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+        <!-- SVG Wave Background -->
+        <svg class="svg-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+                d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,176C672,171,768,213,864,234.7C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+
+    <style>
+        .hero .lead {
+            font-size: 20px !important;
+        }
+
+        .hero h1 {
+            font-size: 40px !important;
+        }
+
+        .hero {
+            background: #004aad;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 5;
+            /* Ensures content stays above SVG and background */
+        }
+
+        .hero-logo {
+            max-width: 110px;
+            border-radius: 10px;
+        }
+
+        .hero-box {
+            position: relative;
+            z-index: 2;
+        }
+
+        .info-card {
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            background: #e9f2ff;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 74, 173, 0.1);
+        }
+
+        .svg-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+            z-index: 1;
+            /* keeps it behind the content */
+        }
+
+        /* Modern button style */
+        .hero-btn {
+            display: inline-block;
+            background: #fff;
+            color: #004aad;
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background: #002e6e;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 90px;
+            }
+
+            .hero-box .row>div {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+
+
+
+    </section>
+    <nav class="breadcrumb-nav text-dark mt-2 mb-4">
+        <a href="#" class="breadcrumb-link">Home <i class="fa-solid fa-chevron-right"></i> Student-Speak</a>
+
+    </nav>
+
+
+    <style>
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            justify-content: start;
+            margin-left: 116px;
+        }
+
+        .breadcrumb-link {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s ease;
+            font-size: 18px;
+        }
+
+        .breadcrumb-link:hover {
+            color: var(--orange, #ff7b00);
+        }
+
+        .breadcrumb-nav i {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .breadcrumb-current {
+            color: #888;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: radial-gradient(circle at 10% 50%, #003556, var(--orange));
+            color: white;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
+
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-left: 80px;
+
+        }
+
+        /* Responsive Search */
+        @media(min-width: 600px) {
+            .search-box {
+                flex-direction: row;
+            }
+        }
+
+        /* Animated SVG Background */
+        .svg-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.15;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+
+
+    <section class="students-left-right">
+        <div class="slr-header">
+            <h2>Students Speak <i class="fa-solid fa-microphone"></i></h2>
+        </div>
+
+        <div class="slr-grid">
+
+            <!-- CARD -->
+            <div class="slr-card">
+                <div class="slr-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                </div>
+                <div class="slr-content">
+                    <h3>Sakshi Tripathi</h3>
+                    <p>Seeking admission for BAMS in Karnataka and got the right guidance...</p>
+                </div>
+            </div>
+
+            <div class="slr-card">
+                <div class="slr-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                </div>
+                <div class="slr-content">
+                    <h3>Soumyadeep Mondal</h3>
+                    <p>Got admission at Sri Sri Ayurveda College with proper counselling...</p>
+                </div>
+            </div>
+
+            <div class="slr-card">
+                <div class="slr-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                </div>
+                <div class="slr-content">
+                    <h3>Tashu Patel</h3>
+                    <p>From Raipur, got NEET guidance and secured the right seat...</p>
+                </div>
+            </div>
+
+            <div class="slr-card">
+                <div class="slr-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                </div>
+                <div class="slr-content">
+                    <h3>Bhakti Jain</h3>
+                    <p>M.Sc Clinical Psychology student who benefitted from expert guidance...</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="slr-pagination">
+            <button class="slr-page prev">&laquo; Prev</button>
+            <button class="slr-page active">1</button>
+            <button class="slr-page">2</button>
+            <button class="slr-page">3</button>
+            <button class="slr-page next">Next &raquo;</button>
+        </div>
+
+        <style>
+            .slr-pagination {
+                display: flex;
+                justify-content: center;
+                /* centers the buttons */
+                gap: 10px;
+                margin-top: 40px;
+            }
+
+            .slr-page {
+                padding: 8px 14px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                background: #fff;
+                color: #1b2a36;
+                cursor: pointer;
+                transition: 0.3s;
+                font-weight: 600;
+            }
+
+            .slr-page:hover:not(.active) {
+                background: #1b2a36;
+                color: #fff;
+            }
+
+            .slr-page.active {
+                background: #1b2a36;
+                color: #fff;
+                border-color: #1b2a36;
+            }
+
+            .slr-page:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        </style>
+    </section>
+
+
+
+
+    <style>
+        .students-left-right {
+            padding: 70px 0;
+            background: #f7f9fc;
+        }
+
+        .slr-header h2 {
+            text-align: center;
+            font-size: 39px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #1b2a36;
+        }
+
+        /* GRID */
+        .slr-grid {
+            max-width: 1300px;
+            margin: auto;
+            display: grid;
+            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        /* CARD */
+        .slr-card {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 16px;
+            background: #ffffff;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.06);
+            transition: 0.3s ease;
+            align-items: center;
+        }
+
+        .slr-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* VIDEO */
+        .slr-video {
+            width: 50%;
+            height: 200px;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .slr-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* TEXT */
+        .slr-content {
+            width: 50%;
+        }
+
+        .slr-content h3 {
+            font-size: 23px !important;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1b2a36;
+        }
+
+        .slr-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #586270;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .slr-card {
+                flex-direction: column;
+            }
+
+            .slr-video,
+            .slr-content {
+                width: 100%;
+            }
+
+            .slr-video {
+                height: 220px;
+            }
+        }
+    </style>
+
+
+    <!-- -==================================================FOOTER SECTION -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & Info -->
+                <div class="col-lg-4 col-md-6 mb-4 left-text">
+                    <div class="footer-logo mb-3">
+                        <img src="Top MBA Study Logo_Color.svg" alt="">
+                    </div>
+                    <p>Dream. Apply. Achieve.<br>
+                        Our Expert Admission Guidance is the Bridge that Connects You to a Brighter Future.</p>
+                    <p><i class="fa fa-phone me-2"></i>1800 120 8696</p>
+                    <p><i class="fa fa-envelope me-2"></i>info@topmbastudy.com</p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i>#80 (4), 'D' Main Rd, East End, 9th
+                        Block,<br>Jayanagar,
+                        Bangalore, Karnataka - 560041</p>
+                </div>
+                <!-- Info -->
+                <div class="col-lg-2 col-md-6 mb-4 pt-5">
+                    <h6 class="footer-title">Info</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                        <li><a href="advertise-with-us.html"><i class="fa-solid fa-angles-right"></i>
+                                advertise-with-us</a></li>
+                        <li><a href="article.html"><i class="fa-solid fa-angles-right"></i> article</a></li>
+                        <li><a href="college-detail.html"><i class="fa-solid fa-angles-right"></i> college-detail</a>
+                        </li>
+                        <li><a href="college.html"><i class="fa-solid fa-angles-right"></i> college</a></li>
+                        <li><a href="exam-profile.html"><i class="fa-solid fa-angles-right"></i> exam-profile</a></li>
+                        <li><a href="exams.html"><i class="fa-solid fa-angles-right"></i> exams</a></li>
+                        <li><a href="Inner Specializations.html"><i class="fa-solid fa-angles-right"></i> Inner
+                                Specializations</a></li>
+                        <li><a href="news-detail.html"><i class="fa-solid fa-angles-right"></i> news-detail</a></li>
+                        <li><a href="news.html"><i class="fa-solid fa-angles-right"></i> News</a></li>
+                        <li><a href="privacy-policy.html"><i class="fa-solid fa-angles-right"></i> privacy-policy</a>
+                        </li>
+                        <li><a href="specializations.html"><i class="fa-solid fa-angles-right"></i> specializations</a>
+                        </li>
+                        <li><a href="terms-&-condition.html"><i class="fa-solid fa-angles-right"></i>
+                                terms-&-condition</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4  pt-5">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Blogs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> NRI Quota</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Study Abroad</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Scholarships</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Student's Speak</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Education Loan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-2 col-md-6 mb-4 pt-5">
+                    <h6 class="footer-title">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Feed</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Disclaimer</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Terms & Conditions</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i> Advertise With Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Download App -->
+                <div class="col-lg-2 col-md-6 mb-4  pt-5">
+                    <h6 class="footer-title">Download Our App</h6>
+                    <div class="download-btn">
+                        <a href="#"><img
+                                src="https://www.learntechww.com/_next/image?url=%2Fimages%2Ficons%2Fapp-store.webp&w=384&q=75"
+                                alt="App Store"></a><br>
+                        <a href="#"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Brochure -->
+            <div class="text-center">
+                <a href="#" class="download-brochure">📄 Download Brochure</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom mt-4 d-flex justify-content-between align-items-center left-text">
+                <p class="mb-0">©2025 Learntech Edu Solutions Pvt. Ltd. All Rights Reserved.</p>
+
+                <div class="d-flex align-items-center ">
+                    <p class="mb-0 me-2">Follow us on</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        /* -----------------------------------footer css code */
+        .footer {
+            background-color: #0c2a45;
+            color: #fff;
+            padding: 40px 20px 20px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .footer a:hover {
+            color: #f1a470;
+        }
+
+        .footer-logo img {
+            height: 100px;
+            align-items: start;
+        }
+
+        .footer .footer-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .footer .download-btn img {
+            max-width: 140px;
+            margin-bottom: 10px;
+        }
+
+        .footer .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #fff;
+            color: #0b2a66;
+            margin: 0 5px;
+            font-size: 16px;
+        }
+
+        .footer .social-icons a:hover {
+            background: #cdddf7;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+        }
+
+        .download-brochure {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #000f34;
+            color: #0b2a66;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            border: 2px solid rgb(255, 255, 255);
+            transition: all 0.3s ease;
+            /* smooth transition for all properties */
+            border-radius: 50px;
+        }
+
+        .download-brochure:hover {
+
+            /* subtle zoom */
+            color: #ffffff;
+            /* optional color change on hover */
+            background: #0b2a66;
+            /* optional background change on hover */
+            border-color: #001a4f;
+            /* optional border change */
+        }
+
+
+        .text-right {
+            display: flex;
+            justify-content: flex-end;
+            /* pushes content to the right */
+            align-items: flex-end;
+            /* vertically centers if needed */
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            /* optional separator */
+            padding-top: 15px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .footer-bottom .social-icons a {
+            color: #000000;
+            margin-left: 12px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom .social-icons a:hover {
+            color: #f1a470;
+            /* highlight on hover */
+        }
+
+        .left-text p {
+            font-size: 16px;
+        }
+
+        .footer p {
+            color: white;
+        }
+
+        .form-bg {
+            background-color: #000124;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    </style>
+
+    <!-- =======================================================scripts below -->
+
+    <!-- Bootstrap 5.3.3 JS Bundle (with Popper) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</body>
+
+</html>
